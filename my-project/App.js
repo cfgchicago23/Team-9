@@ -7,6 +7,7 @@ import { StudentLoginScreen } from "my-project/src/screens";
 import { LeaderLoginScreen } from "my-project/src/screens";
 import { Provider } from "react-native-paper";
 import { Lessons } from "my-project/src/screens";
+import { Announcements } from "my-project/src/screens";
 
 const Stack = createStackNavigator();
 
@@ -30,6 +31,7 @@ export default function App() {
             component={LeaderLoginScreen}
           />
           <Stack.Screen name="Lessons" component={Lessons} />
+          <Stack.Screen name="Announcements" component={Announcements} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>

@@ -1,7 +1,8 @@
 import * as React from "react";
 import { Button, List } from "react-native-paper";
 
-const Lessons = () => {
+
+export default function Lessons({navigation}){
   const [expanded, setExpanded] = React.useState(true);
 
   const handlePress = () => setExpanded(!expanded);
@@ -50,7 +51,7 @@ const Lessons = () => {
         <List.Item title="Takeaways" />
       </List.Accordion>
 
-      <Button mode="contained" onPress={() => navigation.navigate("Lessons")}>
+      <Button mode="contained" onPress={() => navigation.navigate('Announcements')}>
         View Class Announcements
       </Button>
     </List.Section>
@@ -62,5 +63,3 @@ const styles = {
     width: "80%",
   },
 };
-
-export default Lessons;
