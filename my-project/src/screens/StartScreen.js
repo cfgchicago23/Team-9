@@ -8,6 +8,8 @@ import {
   StatusBar,
 } from 'react-native';
 
+// creating leadership dashboard with different options
+
 const DATA = [
   {
     title: 'Leader Dashboard',
