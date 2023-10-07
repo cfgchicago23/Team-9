@@ -1,27 +1,17 @@
-import React from "react";
+//import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { theme } from "./src/core/theme";
-import { StartScreen, StudentLoginScreen, LeaderLoginScreen, Lessons, LocalForum } from "my-project/src/screens";
 import { Provider } from "react-native-paper";
+import { LocalForum, Lessons, Announcements, LeaderLoginScreen, StudentLoginScreen, StartScreen, LeaderDashboard, StudentList } from "my-project/src/screens";
 import LeaderDashboard from './src/screens/LeaderDashboard'
 import StudentList from './src/screens/StudentList'
+import React from 'react';
 
 
 const Stack = createStackNavigator();
 
 export default function App() {
-  /*useEffect(() => {
-    const apiUrl = 'exp://jbhjudk.anonymous.8081.exp.direct';
-
-    axios.get(apiUrl)
-      .then(response => {
-        setData(response.data);
-      })
-      .catch(error => {
-        console.error('Error fetching data:', error);
-      });
-  }, []);*/
 
   return (
     <Provider theme={theme}>
@@ -45,6 +35,7 @@ export default function App() {
           <Stack.Screen name="LeaderDashboard" component={LeaderDashboard} />
           <Stack.Screen name="StudentList" component={StudentList} />
           <Stack.Screen name="LocalForum" component={LocalForum} />
+          <Stack.Screen name="Announcements" component={Announcements} />
 
         </Stack.Navigator>
       </NavigationContainer>
