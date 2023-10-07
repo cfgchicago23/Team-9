@@ -12,7 +12,12 @@ const LeaderDashboard = ({ navigation }) => {
         >
           Student List
         </Button>
-
+        <Button
+          mode="contained"
+          onPress={() => navigation.navigate("LocalForum")}
+        >
+          Local Forum
+        </Button>
       </View>
     </SafeAreaView>
   );
