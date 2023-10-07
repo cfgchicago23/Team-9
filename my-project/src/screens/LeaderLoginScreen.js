@@ -29,7 +29,7 @@ export default function LoginScreen({ navigation }) {
     } else {
         console.log(email.value)
         console.log(password.value)
-        navigation.navigate('Leader Dashboard')
+        navigation.navigate("LeaderDashboard")
     }
   }
 
