@@ -29,10 +29,7 @@ export default function LoginScreen({ navigation }) {
     } else {
         console.log(email.value)
         console.log(password.value)
-        navigation.reset({
-            index: 0,
-            routes: [{ name: 'Dashboard' }],
-        })
+        navigation.navigate('Leader Dashboard')
     }
   }
 
