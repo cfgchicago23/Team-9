@@ -1,0 +1,119 @@
+{
+    "users": [{
+        "firstName": "student1",
+        "email": "s1@gmail.com",
+        "password": "securePassword",
+        "role": "Student",
+        "id": 1,
+        "country": "Nepal",
+        "provinceState": "Madhesh Pradesh",
+        "language": "Nepali",
+        "clubNum": 5
+    }, 
+    {
+        "firstName": "student2",
+        "email": "s2@gmail.com",
+        "password": "securePassword",
+        "role": "Student",
+        "id": 2,
+        "country": "US",
+        "provinceState": "Chicago",
+        "language": "English",
+        "clubNum": 23
+    }, 
+    {
+        "firstName": "student3",
+        "email": "s3@gmail.com",
+        "password": "securePassword",
+        "role": "Student",
+        "id": 3,
+        "country": "US",
+        "provinceState": "Delaware",
+        "language": "English",
+        "clubNum": 56
+    }, 
+    {
+        "firstName": "student4",
+        "email": "s4@gmail.com",
+        "password": "securePassword",
+        "role": "Student",
+        "id": 4,
+        "country": "Nepal",
+        "provinceState": "Madhesh",
+        "language": "Nepali",
+        "clubNum": 5
+    }, 
+    {
+        "firstName": "student5",
+        "email": "s5@gmail.com",
+        "password": "securePassword",
+        "role": "Student",
+        "id": 5,
+        "country": "Nepal",
+        "provinceState": "Pokhara",
+        "language": "Nepali",
+        "clubNum": 12
+    },     
+    {
+        "firstName": "leader1",
+        "email": "l1@gmail.com",
+        "password": "securePassword",
+        "role": "Leader",
+        "id": 6,
+        "country": "Nepal",
+        "provinceState": "Madhesh",
+        "language": "Nepali",
+        "clubNum": 5
+    }, 
+    {
+        "firstName": "leader2",
+        "email": "l2@gmail.com",
+        "password": "securePassword",
+        "role": "Leader",
+        "id": 7,
+        "country": "Nepal",
+        "provinceState": "Pokhara",
+        "language": "Nepali",
+        "clubNum": 12
+    }, 
+    {
+        "firstName": "leader3",
+        "email": "l3@gmail.com",
+        "password": "securePassword",
+        "role": "Leader",
+        "id": 8,
+        "country": "USA",
+        "provinceState": "Chicago",
+        "language": "English",
+        "clubNum": 23
+    }, 
+    {
+        "firstName": "leader4",
+        "email": "l4@gmail.com",
+        "password": "securePassword",
+        "role": "Leader",
+        "id": 9,
+        "country": "USA",
+        "provinceState": "Delaware",
+        "language": "English",
+        "clubNum": 56
+    }],
+    "messages": [
+        {
+            "senderID": 8,
+            "recipientID": 9,
+            "message": "Hello Delaware club leader!"
+        }, 
+        {
+            "senderID": 7,
+            "recipientID": 6,
+            "message": "Hi!"
+        }
+    ],
+    "announcements": [
+        {
+            "senderID": 8,
+            "message": "Welcome to Club 23!"
+        }
+    ]
+}
