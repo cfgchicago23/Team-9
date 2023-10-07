@@ -23,6 +23,12 @@ export default function LoginScreen({ navigation }) {
       setPassword({ ...password, error: passwordError })
       return
     }
+
+    if (email.value != "clubleader@email.com" || password.value != "leaderpassword") {
+        setPassword({ ...password, error: "You're not allowed to access this page" })
+        return
+    }
+
     navigation.reset({
       index: 0,
       routes: [{ name: 'Dashboard' }],
