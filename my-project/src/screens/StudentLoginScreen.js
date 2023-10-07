@@ -19,8 +19,6 @@ export default function StudentLoginScreen({ navigation }) {
     const emailError = emailValidator(email.value, "Student");
     const passwordError = passwordValidator(password.value, "Student");
 
-    console.log(email.value)
-      console.log(password.value)
       if (email.value === "" && password.value === "") {
           console.log("Zero")
           navigation.navigate("Lessons");
