@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const SectionListBasics = () => {
+const StudentList = () => {
   return (
     <View style={styles.container}>
       <SectionList
@@ -51,4 +51,4 @@ const SectionListBasics = () => {
   );
 };
 
-export default SectionListBasics;
+export default StudentList;
