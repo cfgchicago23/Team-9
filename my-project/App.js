@@ -23,7 +23,7 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { theme } from './src/core/theme'
-import StartScreen from './src/screens/StartScreen'
+import LeaderDashboard from './src/screens/LeaderDashboard'
 import StudentList from './src/screens/StudentList'
 import {Provider} from "react-native-paper";
 
@@ -39,7 +39,7 @@ export default function App() {
             headerShown: true,
           }}
         >
-          <Stack.Screen name="StartScreen" component={StartScreen} />
+          <Stack.Screen name="LeaderDashboard" component={LeaderDashboard} />
           <Stack.Screen name="StudentList" component={StudentList} />
         </Stack.Navigator>
       </NavigationContainer>
