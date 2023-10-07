@@ -2,11 +2,8 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { theme } from "./src/core/theme";
-import { StartScreen } from "my-project/src/screens";
-import { StudentLoginScreen } from "my-project/src/screens";
-import { LeaderLoginScreen } from "my-project/src/screens";
+import { StartScreen, StudentLoginScreen, LeaderLoginScreen, Lessons, LocalForum } from "my-project/src/screens";
 import { Provider } from "react-native-paper";
-import { Lessons } from "my-project/src/screens";
 import LeaderDashboard from './src/screens/LeaderDashboard'
 import StudentList from './src/screens/StudentList'
 
@@ -47,6 +44,7 @@ export default function App() {
           <Stack.Screen name="Lessons" component={Lessons} />
           <Stack.Screen name="LeaderDashboard" component={LeaderDashboard} />
           <Stack.Screen name="StudentList" component={StudentList} />
+          <Stack.Screen name="LocalForum" component={LocalForum} />
 
         </Stack.Navigator>
       </NavigationContainer>
