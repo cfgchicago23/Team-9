@@ -7,55 +7,53 @@ const Lessons = () => {
   const handlePress = () => setExpanded(!expanded);
 
   return (
-    <Background>
-      <List.Section title="Lessons" style={styles.container}>
-        <List.Accordion
-          title="Lesson 1"
-          left={(props) => <List.Icon {...props} icon="folder" />}
-        >
-          <List.Item title="Story" />
-          <List.Item title="Quiz" />
-          <List.Item title="Takeaways" />
-        </List.Accordion>
+    <List.Section title="Lessons" style={styles.container}>
+      <List.Accordion
+        title="Lesson 1"
+        left={(props) => <List.Icon {...props} icon="folder" />}
+      >
+        <List.Item title="Story" />
+        <List.Item title="Quiz" />
+        <List.Item title="Takeaways" />
+      </List.Accordion>
 
-        <List.Accordion
-          title="Lesson 2"
-          left={(props) => <List.Icon {...props} icon="folder" />}
-          expanded={expanded}
-          onPress={handlePress}
-        >
-          <List.Item title="Story" />
-          <List.Item title="Quiz" />
-          <List.Item title="Takeaways" />
-        </List.Accordion>
+      <List.Accordion
+        title="Lesson 2"
+        left={(props) => <List.Icon {...props} icon="folder" />}
+        expanded={expanded}
+        onPress={handlePress}
+      >
+        <List.Item title="Story" />
+        <List.Item title="Quiz" />
+        <List.Item title="Takeaways" />
+      </List.Accordion>
 
-        <List.Accordion
-          title="Lesson 3"
-          left={(props) => <List.Icon {...props} icon="folder" />}
-          expanded={expanded}
-          onPress={handlePress}
-        >
-          <List.Item title="Story" />
-          <List.Item title="Quiz" />
-          <List.Item title="Takeaways" />
-        </List.Accordion>
+      <List.Accordion
+        title="Lesson 3"
+        left={(props) => <List.Icon {...props} icon="folder" />}
+        expanded={expanded}
+        onPress={handlePress}
+      >
+        <List.Item title="Story" />
+        <List.Item title="Quiz" />
+        <List.Item title="Takeaways" />
+      </List.Accordion>
 
-        <List.Accordion
-          title="Need Help?"
-          left={(props) => <List.Icon {...props} icon="folder" />}
-          expanded={expanded}
-          onPress={handlePress}
-        >
-          <List.Item title="Resources" />
-          <List.Item title="Contact" />
-          <List.Item title="Takeaways" />
-        </List.Accordion>
-      </List.Section>
+      <List.Accordion
+        title="Need Help?"
+        left={(props) => <List.Icon {...props} icon="folder" />}
+        expanded={expanded}
+        onPress={handlePress}
+      >
+        <List.Item title="Resources" />
+        <List.Item title="Contact" />
+        <List.Item title="Takeaways" />
+      </List.Accordion>
 
       <Button mode="contained" onPress={() => navigation.navigate("Lessons")}>
         View Class Announcements
       </Button>
-    </Background>
+    </List.Section>
   );
 };
 
