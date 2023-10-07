@@ -4,7 +4,6 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { theme } from "./src/core/theme";
 import { Provider } from "react-native-paper";
 import { LocalForum, Lessons, Announcements, LeaderLoginScreen, StudentLoginScreen, StartScreen, LeaderDashboard, StudentList } from "./src/screens";
-//import React from 'react';
 
 
 const Stack = createStackNavigator();
