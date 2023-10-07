@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, SafeAreaView, StatusBar } from 'react-native';
 import ButtonComponent from './button'; // Import the ButtonComponent
+import Button from '../components/Button';
 
 const LeaderDashboard = ({ navigation }) => {
   const handleNavigate = (screenName) => {
@@ -10,7 +11,7 @@ const LeaderDashboard = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.buttonContainer}>
-        <ButtonComponent
+        <Button
           title="Student List"
           onPress={() => handleNavigate('StudentList')}
         />
