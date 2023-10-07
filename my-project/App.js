@@ -7,8 +7,9 @@ import { StudentLoginScreen } from "my-project/src/screens";
 import { LeaderLoginScreen } from "my-project/src/screens";
 import { Provider } from "react-native-paper";
 import { Lessons } from "my-project/src/screens";
-import { Announcements } from "my-project/src/screens";
-import axios from 'axios';
+import LeaderDashboard from './src/screens/LeaderDashboard'
+import StudentList from './src/screens/StudentList'
+
 
 const Stack = createStackNavigator();
 
@@ -44,9 +45,12 @@ export default function App() {
             component={LeaderLoginScreen}
           />
           <Stack.Screen name="Lessons" component={Lessons} />
-          <Stack.Screen name="Announcements" component={Announcements} />
+          <Stack.Screen name="LeaderDashboard" component={LeaderDashboard} />
+          <Stack.Screen name="StudentList" component={StudentList} />
+
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
   );
 }
+
