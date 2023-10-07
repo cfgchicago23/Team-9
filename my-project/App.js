@@ -24,6 +24,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { theme } from './src/core/theme'
 import StartScreen from './src/screens/StartScreen'
+import {Provider} from "react-native-paper";
 
 const Stack = createStackNavigator()
 
