@@ -50,9 +50,9 @@ export default function Lessons({navigation}){
         <List.Item title="Takeaways" />
       </List.Accordion>
 
-      <Button mode="contained" onPress={() => navigation.navigate('Announcements')}>
-        View Class Announcements
-      </Button>
+      {/*<Button mode="contained" onPress={() => navigation.navigate('Announcements')}>*/}
+      {/*  View Class Announcements*/}
+      {/*</Button>*/}
     </List.Section>
   );
 };
