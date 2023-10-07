@@ -35,11 +35,10 @@ export default function App() {
         <Stack.Navigator
           initialRouteName="StartScreen"
           screenOptions={{
-            headerShown: false,
+            headerShown: true,
           }}
         >
           <Stack.Screen name="StartScreen" component={StartScreen} />
-          <Stack.Screen name="ResetPasswordScreen" component={ResetPasswordScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
