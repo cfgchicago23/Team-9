@@ -24,7 +24,7 @@ export default function LoginScreen({ navigation }) {
       return
     }
 
-    if (email.value != "clubleader@email.com" || password.value != "leaderpassword") {
+    if (email.value !== "clubleader@email.com" || password.value !== "leaderpassword") {
         setPassword({ ...password, error: "You're not allowed to access this page" })
     } else {
         console.log(email.value)
