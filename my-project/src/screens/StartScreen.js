@@ -13,7 +13,7 @@ import {
 const DATA = [
   {
     title: 'Leader Dashboard',
-    data: ['Student List', 'Leader Chat', 'Internet Chat', 'Club Settings'],
+    data: ['Student List', 'Leader Chat', 'International Chat', 'Club Settings'],
   },
  
 ];
