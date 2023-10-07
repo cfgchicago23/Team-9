@@ -1,13 +1,14 @@
-import React from 'react'
-import { NavigationContainer } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack'
-import { theme } from './src/core/theme'
-import {StartScreen} from 'my-project/src/screens'
-import {StudentLoginScreen} from 'my-project/src/screens'
-import {LeaderLoginScreen} from 'my-project/src/screens'
-import {Provider} from "react-native-paper";
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import { theme } from "./src/core/theme";
+import { StartScreen } from "my-project/src/screens";
+import { StudentLoginScreen } from "my-project/src/screens";
+import { LeaderLoginScreen } from "my-project/src/screens";
+import { Provider } from "react-native-paper";
+import { Lessons } from "my-project/src/screens";
 
-const Stack = createStackNavigator()
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
@@ -20,10 +21,17 @@ export default function App() {
           }}
         >
           <Stack.Screen name="StartScreen" component={StartScreen} />
-          <Stack.Screen name="StudentLoginScreen" component={StudentLoginScreen} />
-          <Stack.Screen name="LeaderLoginScreen" component={LeaderLoginScreen} />
+          <Stack.Screen
+            name="StudentLoginScreen"
+            component={StudentLoginScreen}
+          />
+          <Stack.Screen
+            name="LeaderLoginScreen"
+            component={LeaderLoginScreen}
+          />
+          <Stack.Screen name="Lessons" component={Lessons} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
-  )
+  );
 }
