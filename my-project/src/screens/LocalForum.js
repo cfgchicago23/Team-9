@@ -3,7 +3,7 @@ import { GiftedChat } from 'react-native-gifted-chat'
 
 import SlackMessage from './SlackMessage'
 
-export default class App extends React.Component {
+export default class LocalForum extends React.Component {
   state = {
     messages: [],
   }
@@ -19,7 +19,6 @@ export default class App extends React.Component {
           user: {
             _id: 2,
             name: 'React Native',
-            // avatar: 'https://placeimg.com/140/140/any',
           },
         },
       ],

@@ -4,5 +4,5 @@ export { default as LeaderLoginScreen } from "./LeaderLoginScreen";
 export { default as Lessons } from "./Lessons";
 export { default as Announcements } from "./Announcements";
 export { default as LeaderDashboard } from "./LeaderDashboard";
-export { default as StudentList } from "./StudentList";
+export { default as StudentProgress } from "./StudentProgress";
 export { default as LocalForum } from "./LocalForum";

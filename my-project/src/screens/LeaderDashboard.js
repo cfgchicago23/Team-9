@@ -8,7 +8,7 @@ const LeaderDashboard = ({ navigation }) => {
       <View style={styles.buttonContainer}>
         <Button
           mode="contained"
-          onPress={() => navigation.navigate("StudentList")}
+          onPress={() => navigation.navigate("StudentProgress")}
         >
           Student List
         </Button>
@@ -17,6 +17,16 @@ const LeaderDashboard = ({ navigation }) => {
           onPress={() => navigation.navigate("LocalForum")}
         >
           Local Forum
+        </Button>
+        <Button
+          mode="contained"
+        >
+          Submit Evaluations
+        </Button>
+        <Button
+          mode="contained"
+        >
+          Start a New Club
         </Button>
       </View>
     </SafeAreaView>
