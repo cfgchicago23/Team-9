@@ -4,6 +4,7 @@ import Logo from 'my-project/src/components/Logo.js'
 import Header from 'my-project/src/components/Header.js'
 import Button from 'my-project/src/components/Button.js'
 
+
 export default function StartScreen({ navigation }) {
   return (
     <Background>
@@ -21,6 +22,14 @@ export default function StartScreen({ navigation }) {
       >
         Student
       </Button>
+
+      <Button
+        mode="contained"
+        onPress={() => navigation.navigate('ChangeLanguageScreen')}
+      >
+        Change Language
+      </Button>
+
     </Background>
   )
 }

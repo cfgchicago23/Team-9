@@ -6,3 +6,6 @@ export { default as Announcements } from "./Announcements";
 export { default as LeaderDashboard } from "./LeaderDashboard";
 export { default as StudentList } from "./StudentList";
 export { default as LocalForum } from "./LocalForum";
+export { default as ChangeLanguageScreen } from "./ChangeLanguageScreen";
+export { default as SpanishLogin } from "./SpanishLogin";
+
