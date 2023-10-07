@@ -27,6 +27,8 @@ export default function LoginScreen({ navigation }) {
     if (email.value != "clubleader@email.com" || password.value != "leaderpassword") {
         setPassword({ ...password, error: "You're not allowed to access this page" })
     } else {
+        console.log(email.value)
+        console.log(password.value)
         navigation.reset({
             index: 0,
             routes: [{ name: 'Dashboard' }],
