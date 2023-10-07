@@ -15,18 +15,11 @@ const LeaderDashboard = ({ navigation }) => {
           title="Student List"
           onPress={() => handleNavigate('StudentList')}
         />
-        {/* <ButtonComponent
-          title="Leader Chat"
-          onPress={() => handleNavigate('LeaderChat')}
-        /> */}
-        {/* <ButtonComponent
-          title="International Chat"
-          onPress={() => handleNavigate('InternationalChat')}
+        <Button
+          title="Student Progress"
+          onPress={() => handleNavigate('StudentProgress')}
         />
-        <ButtonComponent
-          title="Progress"
-          onPress={() => handleNavigate('Progress')}
-        /> */}
+        
       </View>
     </SafeAreaView>
   );
