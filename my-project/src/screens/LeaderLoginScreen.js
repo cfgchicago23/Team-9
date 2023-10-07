@@ -69,7 +69,7 @@ export default function LoginScreen({ navigation }) {
           <Text style={styles.forgot}>Forgot your password ?</Text>
         </TouchableOpacity>
       </View>
-      <Button mode="contained" onPress={() => navigation.navigate('LeaderDashboard')}>
+      <Button mode="contained" onPress={() => onLoginPressed()}>
         Log in
       </Button>
       <View style={styles.row}>
