@@ -1,12 +1,10 @@
-//import React from "react";
+import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { theme } from "./src/core/theme";
 import { Provider } from "react-native-paper";
-import { LocalForum, Lessons, Announcements, LeaderLoginScreen, StudentLoginScreen, StartScreen, LeaderDashboard, StudentList } from "my-project/src/screens";
-import LeaderDashboard from './src/screens/LeaderDashboard'
-import StudentList from './src/screens/StudentList'
-import React from 'react';
+import { LocalForum, Lessons, Announcements, LeaderLoginScreen, StudentLoginScreen, StartScreen, LeaderDashboard, StudentList } from "./src/screens";
+//import React from 'react';
 
 
 const Stack = createStackNavigator();
