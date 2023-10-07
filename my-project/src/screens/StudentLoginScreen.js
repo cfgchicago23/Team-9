@@ -11,13 +11,13 @@ import { theme } from "../core/theme";
 import { emailValidator } from "my-project/src/helpers/emailValidator.js";
 import { passwordValidator } from "my-project/src/helpers/passwordValidator.js";
 
-export default function LoginScreen({ navigation }) {
+export default function StudentLoginScreen({ navigation }) {
   const [email, setEmail] = useState({ value: "", error: "" });
   const [password, setPassword] = useState({ value: "", error: "" });
 
   const onLoginPressed = () => {
-    const emailError = emailValidator(email.value);
-    const passwordError = passwordValidator(password.value);
+    const emailError = emailValidator(email.value, "Student");
+    const passwordError = passwordValidator(password.value, "Student");
     if (emailError || passwordError) {
       setEmail({ ...email, error: emailError });
       setPassword({ ...password, error: passwordError });

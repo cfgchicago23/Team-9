@@ -14,6 +14,18 @@ import StudentList from './src/screens/StudentList'
 const Stack = createStackNavigator();
 
 export default function App() {
+  useEffect(() => {
+    const apiUrl = 'exp://jbhjudk.anonymous.8081.exp.direct';
+
+    axios.get(apiUrl)
+      .then(response => {
+        setData(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
+
   return (
     <Provider theme={theme}>
       <NavigationContainer>
