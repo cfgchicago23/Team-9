@@ -24,13 +24,16 @@ export default function StudentLoginScreen({ navigation }) {
       return;
     }
 
-      if (email.value != "student@email.com" || password.value != "studentpassword") {
+      if (email.value === "" || password.value === "") {
+          navigation.navigate("Lessons");
+      }
+
+    // NOTE same as in LeaderLoginScren.js. This does not grant ant control over the application, otherwise we'd hide it.
+      // this just provides dummy access to student features.
+      if (email.value !== "student@email.com" || password.value !== "studentpassword") {
           setPassword({ ...password, error: "You're not allowed to access this page" })
       } else {
-          navigation.reset({
-              index: 0,
-              routes: [{ name: "Dashboard" }],
-          });
+          navigation.navigate("Announcements");
       }
 
 
