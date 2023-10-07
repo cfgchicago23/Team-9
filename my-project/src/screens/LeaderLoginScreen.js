@@ -24,6 +24,8 @@ export default function LoginScreen({ navigation }) {
       return
     }
 
+    // NOTE: this password does not give access to any control over the app, just lets you into the next stage of the app.
+    // usually this would involve a check against a database, but we didn't have time to set that up.
     if (email.value !== "clubleader@email.com" || password.value !== "leaderpassword") {
         setPassword({ ...password, error: "You're not allowed to access this page" })
     } else {
