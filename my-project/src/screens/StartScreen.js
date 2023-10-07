@@ -16,7 +16,7 @@ const DATA = [
  
 ];
 
-const App = () => (
+const StartScreen = () => (
   <SafeAreaView style={styles.container}>
     <SectionList
       sections={DATA}
@@ -53,4 +53,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default StartScreen;
