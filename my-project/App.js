@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { theme } from "./src/core/theme";
@@ -6,25 +6,26 @@ import { StartScreen } from "my-project/src/screens";
 import { StudentLoginScreen } from "my-project/src/screens";
 import { LeaderLoginScreen } from "my-project/src/screens";
 import { Provider } from "react-native-paper";
-import { Lessons } from "my-project/src/screens";
+import { Lessons, Announcements } from "my-project/src/screens";
 import LeaderDashboard from './src/screens/LeaderDashboard'
 import StudentList from './src/screens/StudentList'
+import React, { useEffect } from 'react';
 
 
 const Stack = createStackNavigator();
 
 export default function App() {
-  useEffect(() => {
-    const apiUrl = 'exp://jbhjudk.anonymous.8081.exp.direct';
+  // useEffect(() => {
+  //   const apiUrl = 'exp://jbhjudk.anonymous.8081.exp.direct';
 
-    axios.get(apiUrl)
-      .then(response => {
-        setData(response.data);
-      })
-      .catch(error => {
-        console.error('Error fetching data:', error);
-      });
-  }, []);
+  //   axios.get(apiUrl)
+  //     .then(response => {
+  //       setData(response.data);
+  //     })
+  //     .catch(error => {
+  //       console.error('Error fetching data:', error);
+  //     });
+  // }, []);
 
   return (
     <Provider theme={theme}>
@@ -47,7 +48,7 @@ export default function App() {
           <Stack.Screen name="Lessons" component={Lessons} />
           <Stack.Screen name="LeaderDashboard" component={LeaderDashboard} />
           <Stack.Screen name="StudentList" component={StudentList} />
-
+          <Stack.Screen name="Announcements" component={Announcements} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>

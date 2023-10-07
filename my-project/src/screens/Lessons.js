@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Button, List } from "react-native-paper";
 
-
 export default function Lessons({navigation}){
   const [expanded, setExpanded] = React.useState(true);
 
