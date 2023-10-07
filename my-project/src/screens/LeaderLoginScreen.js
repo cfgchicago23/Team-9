@@ -23,10 +23,16 @@ export default function LoginScreen({ navigation }) {
       setPassword({ ...password, error: passwordError })
       return
     }
-    navigation.reset({
-      index: 0,
-      routes: [{ name: 'Dashboard' }],
-    })
+
+    // NOTE: this password does not give access to any control over the app, just lets you into the next stage of the app.
+    // usually this would involve a check against a database, but we didn't have time to set that up.
+    if (email.value !== "clubleader@email.com" || password.value !== "leaderpassword") {
+        setPassword({ ...password, error: "You're not allowed to access this page" })
+    } else {
+        console.log(email.value)
+        console.log(password.value)
+        navigation.navigate("LeaderDashboard")
+    }
   }
 
   return (
@@ -62,7 +68,7 @@ export default function LoginScreen({ navigation }) {
           <Text style={styles.forgot}>Forgot your password ?</Text>
         </TouchableOpacity>
       </View>
-      <Button mode="contained" onPress={() => navigation.navigate('LeaderDashboard')}>
+      <Button mode="contained" onPress={() => onLoginPressed()}>
         Log in
       </Button>
       <View style={styles.row}>
