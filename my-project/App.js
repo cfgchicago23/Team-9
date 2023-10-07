@@ -8,10 +8,23 @@ import { LeaderLoginScreen } from "my-project/src/screens";
 import { Provider } from "react-native-paper";
 import { Lessons } from "my-project/src/screens";
 import { Announcements } from "my-project/src/screens";
+import axios from 'axios';
 
 const Stack = createStackNavigator();
 
 export default function App() {
+  useEffect(() => {
+    const apiUrl = 'exp://jbhjudk.anonymous.8081.exp.direct';
+
+    axios.get(apiUrl)
+      .then(response => {
+        setData(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
+
   return (
     <Provider theme={theme}>
       <NavigationContainer>
