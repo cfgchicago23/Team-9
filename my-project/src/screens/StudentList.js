@@ -27,17 +27,17 @@ const SectionListBasics = () => {
     <View style={styles.container}>
       <SectionList
         sections={[
-          {title: 'D', data: ['D1', 'D2', 'D3']},
+          {title: 'D', data: ['Daisy', 'Dina', 'Dee']},
           {
             title: 'J',
             data: [
-              'J1',
-              'J2',
-              'J3',
-              'J4',
-              'J5',
-              'J6',
-              'J7',
+              'Jordan',
+              'Jane',
+              'Jessica',
+              'Joy',
+              'Jill',
+              'Jessica',
+              'Jen',
             ],
           },
         ]}

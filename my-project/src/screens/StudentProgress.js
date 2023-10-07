@@ -7,11 +7,11 @@ function App() {
   return (
     <View>
       <body>Lesson 1</body>
-      <MyProgressBar progress={0.8} width={200} height={20} color="#00f" borderWidth={2} />
+      <MyProgressBar progress={0.8} width={200} height={20} color="#E37383" borderWidth={2} />
       <body>Lesson 2</body>
-      <MyProgressBar progress={0.5} width={250} height={15} color="#f00"borderWidth={2} />
+      <MyProgressBar progress={0.5} width={250} height={15} color="#E37383"borderWidth={2} />
       <body>Lesson 3</body>
-      <MyProgressBar progress={0.3} width={250} height={15} color="#f00"borderWidth={2} />
+      <MyProgressBar progress={0.3} width={250} height={15} color="#E37383"borderWidth={2} />
       
     </View>
   );
