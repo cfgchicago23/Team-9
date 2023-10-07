@@ -100,9 +100,9 @@ export default class Bubble extends React.Component {
     if (this.props.renderTicks) {
       return this.props.renderTicks(currentMessage)
     }
-    if (currentMessage.user._id !== this.props.user._id) {
-      return null
-    }
+    // if (currentMessage.user._id !== this.props.user._id) {
+    //   return null
+    // }
     if (currentMessage.sent || currentMessage.received) {
       return (
         <View style={[styles.headerItem, styles.tickView]}>
@@ -181,9 +181,9 @@ export default class Bubble extends React.Component {
   }
 
   render() {
-    const isSameThread =
-      isSameUser(this.props.currentMessage, this.props.previousMessage) &&
-      isSameDay(this.props.currentMessage, this.props.previousMessage)
+    const isSameThread = true
+      // isSameUser(this.props.currentMessage, this.props.previousMessage) &&
+      // isSameDay(this.props.currentMessage, this.props.previousMessage)
 
     const messageHeader = isSameThread ? null : (
       <View style={styles.headerView}>
