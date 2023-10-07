@@ -26,13 +26,14 @@ export default function StudentLoginScreen({ navigation }) {
 
       if (email.value != "student@email.com" || password.value != "studentpassword") {
           setPassword({ ...password, error: "You're not allowed to access this page" })
-          return
+      } else {
+          navigation.reset({
+              index: 0,
+              routes: [{ name: "Dashboard" }],
+          });
       }
 
-    navigation.reset({
-      index: 0,
-      routes: [{ name: "Dashboard" }],
-    });
+
   };
 
   return (
