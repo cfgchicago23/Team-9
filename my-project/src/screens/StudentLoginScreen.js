@@ -18,22 +18,28 @@ export default function StudentLoginScreen({ navigation }) {
   const onLoginPressed = () => {
     const emailError = emailValidator(email.value, "Student");
     const passwordError = passwordValidator(password.value, "Student");
+
+    console.log(email.value)
+      console.log(password.value)
+      if (email.value === "" && password.value === "") {
+          console.log("Zero")
+          navigation.navigate("Lessons");
+          return;
+      }
+
     if (emailError || passwordError) {
       setEmail({ ...email, error: emailError });
       setPassword({ ...password, error: passwordError });
       return;
     }
 
-      if (email.value != "student@email.com" || password.value != "studentpassword") {
+      // NOTE same as in LeaderLoginScren.js. This does not grant ant control over the application, otherwise we'd hide it.
+      // this just provides dummy access to student features.
+      if (email.value !== "student@email.com" || password.value !== "studentpassword") {
           setPassword({ ...password, error: "You're not allowed to access this page" })
       } else {
-          navigation.reset({
-              index: 0,
-              routes: [{ name: "Dashboard" }],
-          });
+          navigation.navigate("Announcements");
       }
-
-
   };
 
   return (
@@ -69,7 +75,7 @@ export default function StudentLoginScreen({ navigation }) {
           <Text style={styles.forgot}>Forgot your password ?</Text>
         </TouchableOpacity>
       </View>
-      <Button mode="contained" onPress={() => navigation.navigate("Lessons")}>
+      <Button mode="contained" onPress={() => onLoginPressed()}>
         Log in
       </Button>
       <View style={styles.row}>
