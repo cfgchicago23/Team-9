@@ -27,17 +27,11 @@ const StudentList = () => {
     <View style={styles.container}>
       <SectionList
         sections={[
-          {title: 'D', data: ['Dina', 'Donna', 'Dara']},
+          {title: 'D',
+            data: ['Dina', 'Donna', 'Dara']},
           {
             title: 'J',
-            data: [
-              'Jen',
-              'Jill',
-              'Jess',
-              'Jenna',
-              'Joanna',
-              'Jessica',
-              'Joy',
+            data: ['Jen', 'Jill', 'Jess', 'Jenna', 'Joanna', 'Jessica', 'Joy',
             ],
           },
         ]}
